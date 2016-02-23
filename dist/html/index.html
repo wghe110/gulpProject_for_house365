@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="GBK">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0,shrink-to-fit=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="365淘房">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- 标题 -->
+	<title>Document</title>
+	<script src="http://zt.house365.com/project/nj/2016/01/19/commentJs/house365-loading.min.js"></script>
+	<!-- 设置rem基准值setRemJs -->
+	<script src="http://zt.house365.com/project/nj/2016/01/19/commentJs/setRem.js"></script>
+	<!-- 引入样式 -->
+    <link rel="stylesheet" href="../css/pages/index.css?v=cb0a2855cf" type="text/css"/>
+</head>
+<body>
+	<section class="section section--home">
+		<a href="javascript:;" class="btn btn--start js-btn--start pressBtn">即刻参加</a>
+	</section>
+	<section class="section section--game js-section--game">
+		<div class="lantern js-lantern">
+			<img src="../images/lantern__icon.png?v=8cfffe1c00" alt="" class="lantern__icon">
+			<img src="../images/lantern--dark.png?v=525ea41e00" alt="" class="lantern__img--dark">
+			<img src="../images/lantern--light.png?v=070aa00ece" alt="" class="lantern__img--light">
+			<ul class="points-light js-points-light">
+				<li class="points-light__item"></li>
+				<li class="points-light__item"></li>
+				<li class="points-light__item"></li>
+				<li class="points-light__item"></li>
+				<li class="points-light__item"></li>
+			</ul>
+		</div>
+		<div class="info">
+			<p class="info__item">当前灯笼数 : <span id="js-num--lantern">00</span></p>
+			<p class="info__item">当前奖品 : <span id="js-gift--get">无</p>
+		</div>
+		<a href="javascript:;" class="btn btn--light js-btn--light pressBtn">点亮花灯</a>
+		<a href="javascript:;" class="btn btn--progress js-btn--progress pressBtn">奖品进程</a>
+	</section>
+	<section class="section section--progress js-section--progress">
+		<div class="note">
+			<div class="note__scrollBox">
+				活动须知：<br>1、点灯活动从元宵节当天开始，持续一周；<br>2、每个人每天可以点1次；<br>3、所有人点灯数是累积的，灯数越多奖品越丰厚，具体奖品明细及对应要求点灯数可在“奖品进程”中查看。<br>4、当前页面显示的奖品即为当前点灯数所对应的奖品。灯数提升，页面会自动跳转到对应奖品。
+			</div>
+		</div>
+		<ul class="lantern-pro">
+			<li class="lantern-pro__item js-lantern-pro__item item1"><span class="lantern-pro__word word1"><em>10</em>元年货大礼包</span></li>
+			<li class="lantern-pro__item js-lantern-pro__item item2"><span class="lantern-pro__word word2"><em>30</em>元年货大礼包</span></li>
+			<li class="lantern-pro__item js-lantern-pro__item item3"><span class="lantern-pro__word word3"><em>50</em>元年货大礼包</span></li>
+		</ul>
+		<a href="javascript:;" class="btn--goBack js-btn--goBack pressBtn"><i class="icon-goBack"></i>返回</a>
+	</section>
+	<section class="section section--info js-section--info">
+		<div class="note">
+			<div class="note__scrollBox">
+				领奖须知：<br>领奖日期起，参与活动者可至案场领取实物奖品，限前100名，先到先得；<br>奖品剩余数量可致电025-85798999询问
+			</div>
+		</div>
+		<div class="ad">
+			<img src="../images/ad.jpg?v=02fdc0e06b" alt="" class="add__img">
+		</div>
+		<div class="btnBox">
+			<div class="flex"><a href="javascript:;" class="btn btn--nav pressBtn">一键导航</a></div>
+			<div class="flex"><a href="javascript:;" class="btn btn--call pressBtn">一键拨号</a></div>
+		</div>
+		<a href="javascript:;" class="btn--goBack js-btn--goBack pressBtn"><i class="icon-goBack"></i>返回</a>
+	</section>
+	<section class="section section--pop js-section--pop">
+		<div class="flexBox">
+			<article class="pop-inp js-pop-inp">
+				<h2 class="subPop__tit">填写信息</h2>
+				<div class="inpBox mb30">
+					<label for="">姓名:</label>
+					<input type="text" maxlength="6">
+				</div>
+				<div class="inpBox mb44">
+					<label for="">电话:</label>
+					<input type="tel" maxlength="11">
+				</div>
+				<a href="javascript:;" class="btn btn--submit js-btn--submit pressBtn">确定领奖</a>
+			</article>
+			<article class="pop-timeUp js-pop-timeUp">
+				<h2 class="subPop__tit">次数用完</h2>
+				<p class="info mb30">今天的灯已经亮了<br>明天再来点吧</p>
+				<a href="javascript:;" class="btn btn--sure js-btn--sure pressBtn">确定</a>
+			</article>
+			<artilce class="pop-loading js-pop-loading"></artilce>
+		</div>
+	</section>
+	<script>
+		// config
+		var num_canLight = 1;//可以点亮灯笼的次数
+		var num_lantern = 0;//已经点亮的灯笼个数
+		var gift_get = '无';//已经获得奖品
+		var limit_gift = [1, 100, 300];//礼品对象的区间
+		//预加载图片
+		var aLoadImg = [
+			'../images/ad.jpg?v=02fdc0e06b',
+			'../images/bg-kongmin--light.png?v=5ed8fbd4be',
+			'../images/bg-kongmin--info.png?v=2649f7251a',
+			'../images/bg--pop.png?v=edf20a77ee',
+			'../images/bg--progress.png?v=816c3a4acb',
+			'../images/lantern--dark.png?v=525ea41e00',
+			'../images/lantern--light.png?v=070aa00ece',
+			'../images/lantern-pro--dark.png?v=78878f436b',
+			'../images/lantern-pro--light.png?v=098fa2c278',
+			'../images/ribbon.png?v=790fcee1ea',
+			'../images/lantern__icon.png?v=8cfffe1c00',
+			'../images/bg--popBottm.jpg?v=051f269686',
+			'../images/bg--popTop.jpg?v=77b24e1214',
+			'../images/bg--popMiddle.jpg?v=1ee0eea41b'
+		];
+	</script>
+	<!-- 引入requireJs -->
+	<script src="http://zt.house365.com/project/nj/2016/01/19/commentJs/require.min.js" data-main="../js/mainF" async></script>
+</body>
+</html>

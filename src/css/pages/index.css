@@ -1,0 +1,76 @@
+/* line 1, ../../sass/mixin/resetH.scss */
+html {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-size: 20px; }
+
+/* line 9, ../../sass/mixin/resetH.scss */
+body, button, input, select, textarea, h1, h2, h3, h4, h5, ul, p {
+  margin: 0; }
+
+/* line 13, ../../sass/mixin/resetH.scss */
+ul, ol, li, dl, dt, dd, tr, td {
+  padding: 0; }
+
+/* line 17, ../../sass/mixin/resetH.scss */
+a, input, textarea, select, button {
+  text-decoration: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 26, ../../sass/mixin/resetH.scss */
+a {
+  text-decoration: none; }
+  /* line 30, ../../sass/mixin/resetH.scss */
+  a:active {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; }
+
+/* line 37, ../../sass/mixin/resetH.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 43, ../../sass/mixin/resetH.scss */
+h1 {
+  font-size: 2em; }
+
+/* line 47, ../../sass/mixin/resetH.scss */
+img, input, button {
+  border: none; }
+
+/* line 51, ../../sass/mixin/resetH.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button; }
+
+/* line 55, ../../sass/mixin/resetH.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 58, ../../sass/mixin/resetH.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 64, ../../sass/mixin/resetH.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 67, ../../sass/mixin/resetH.scss */
+li {
+  list-style: none; }
+
+/* line 71, ../../sass/mixin/resetH.scss */
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto; }
+
+/* line 8, ../../sass/pages/index.scss */
+body {
+  width: 18.75rem;
+  margin: 0 auto; }
