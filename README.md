@@ -10,19 +10,17 @@ http://www.house365.com
     1.安装 node.js
 
     2.全局安装gulp  
-    ```javascript
-     npm install -g gulp
-    ```javascript
+        npm install -g gulp
+
 
     3.安装项目
-    ```javascript
-     npm install gulp_project_for_house365
-    ```javascript
+        npm install gulp_project_for_house365
+
 
     4. 安装需要的插件
-    ```javascript
-     npm install
-    ```javascript
+        npm install
+
+
 
 ###使用:
 
