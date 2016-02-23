@@ -21,8 +21,8 @@ var concat = require('gulp-concat');				//合并文件
 
 //上传地址配置
 var addr= {
-	host:'221.231.141.169',
-	path:'project/nj/2016/02/19/denglong'
+	host:'',
+	path:''
 }
 
 /*======================= 华丽的分割线(生成dist上线版本) ============================*/
@@ -135,8 +135,8 @@ gulp.task('ftp',function(){
 	.pipe(ftp({
 		host: addr.host,
 		remotePath:addr.path,
-		user:'wanggonghe',
-		pass:'wghe110'
+		user:'',
+		pass:''
 	}))
 })
 //打开目标测试地址
