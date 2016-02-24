@@ -21,6 +21,7 @@ http://www.house365.com
 
     npm install
 
+*版本清缓存的另一种方法：http://www.tuicool.com/articles/UbaqyyJ*
 
 ###使用:
 *使用前请先配置好gulpfile.js里面的上传路径和用户名以及密码*
