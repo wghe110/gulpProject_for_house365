@@ -24,6 +24,9 @@ var addr= {
 	host:'',
 	path:''
 }
+//用户名和密码
+var userName = '';
+var userPwd = ''
 
 /*======================= 华丽的分割线(生成dist上线版本) ============================*/
 
@@ -135,8 +138,8 @@ gulp.task('ftp',function(){
 	.pipe(ftp({
 		host: addr.host,
 		remotePath:addr.path,
-		user:'',
-		pass:''
+		user:userName,
+		pass:userPwd
 	}))
 })
 //打开目标测试地址
