@@ -17,11 +17,7 @@ http://www.house365.com
 
     npm install gulp_project_for_house365
 
-3.安装项目
-
-    npm install gulp_project_for_house365
-
-4.安装需要的插件
+4.进去gulp_project_for_house365文件夹，安装需要的插件
 
     npm install
 
