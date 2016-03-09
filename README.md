@@ -33,3 +33,11 @@ http://www.house365.com
 2.压缩生成dist线上版本并上传到服务器
 
     gulp
+
+3.重置开发目录src下文件，并把原来的src文件备份在backup文件下，方便恢复
+
+    gulp reset
+
+4.恢复上一次开发的src目录，该目录保存在backup目录下
+
+    gulp goBack

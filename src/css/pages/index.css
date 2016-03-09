@@ -1,74 +1,74 @@
-/* line 1, ../../sass/mixin/resetH.scss */
+/* line 1, ../../sass/mixin/reset_for_mobile.scss */
 html {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   -webkit-text-size-adjust: 100%;
   font-size: 20px; }
 
-/* line 9, ../../sass/mixin/resetH.scss */
-body, button, input, select, textarea, h1, h2, h3, h4, h5, ul, p {
+/* line 10, ../../sass/mixin/reset_for_mobile.scss */
+body, button, input, select, textarea, h1, h2, h3, h4, h5, ul, p, fieldset {
   margin: 0; }
 
-/* line 13, ../../sass/mixin/resetH.scss */
-ul, ol, li, dl, dt, dd, tr, td {
+/* line 15, ../../sass/mixin/reset_for_mobile.scss */
+ul, ol, li, dl, dt, dd, tr, td, fieldset, input {
   padding: 0; }
 
-/* line 17, ../../sass/mixin/resetH.scss */
+/* line 20, ../../sass/mixin/reset_for_mobile.scss */
 a, input, textarea, select, button {
-  text-decoration: none;
   outline: 0;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
 
-/* line 26, ../../sass/mixin/resetH.scss */
+/* line 28, ../../sass/mixin/reset_for_mobile.scss */
 a {
   text-decoration: none; }
-  /* line 30, ../../sass/mixin/resetH.scss */
-  a:active {
-    outline: 0;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: transparent; }
 
-/* line 37, ../../sass/mixin/resetH.scss */
+/* line 32, ../../sass/mixin/reset_for_mobile.scss */
+a:active {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 38, ../../sass/mixin/reset_for_mobile.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 43, ../../sass/mixin/resetH.scss */
-h1 {
-  font-size: 2em; }
-
-/* line 47, ../../sass/mixin/resetH.scss */
+/* line 45, ../../sass/mixin/reset_for_mobile.scss */
 img, input, button {
   border: none; }
 
-/* line 51, ../../sass/mixin/resetH.scss */
+/* line 50, ../../sass/mixin/reset_for_mobile.scss */
+li {
+  list-style: none; }
+
+/* line 55, ../../sass/mixin/reset_for_mobile.scss */
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto; }
+
+/* line 63, ../../sass/mixin/reset_for_mobile.scss */
+input, textarea, select, button {
+  border-radius: 0; }
+
+/* line 67, ../../sass/mixin/reset_for_mobile.scss */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button; }
 
-/* line 55, ../../sass/mixin/resetH.scss */
+/* line 71, ../../sass/mixin/reset_for_mobile.scss */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-/* line 58, ../../sass/mixin/resetH.scss */
+/* line 74, ../../sass/mixin/reset_for_mobile.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 64, ../../sass/mixin/resetH.scss */
+/* line 80, ../../sass/mixin/reset_for_mobile.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
-
-/* line 67, ../../sass/mixin/resetH.scss */
-li {
-  list-style: none; }
-
-/* line 71, ../../sass/mixin/resetH.scss */
-img {
-  vertical-align: top;
-  max-width: 100%;
-  height: auto; }
 
 /* line 8, ../../sass/pages/index.scss */
 body {
