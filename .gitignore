@@ -1,1 +1,7 @@
 node_modules
+# keep
+rev
+dist
+reset
+backup
+src
