@@ -1,7 +1,7 @@
 node_modules
 # keep
-rev
-dist
-reset
-backup
-src
+!rev
+!dist
+!reset
+!backup
+!src
