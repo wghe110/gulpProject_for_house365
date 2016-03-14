@@ -30,14 +30,22 @@ http://www.house365.com
 
     gulp server
 
-2.压缩生成dist线上版本并上传到服务器
+2.清空dist、rev目录下的文件
 
-    gulp
+    gulp clean
 
-3.重置开发目录src下文件，并把原来的src文件备份在backup文件下，方便恢复
+3.压缩资源(图片、css、js)、移动音频、视频
+
+    gulp min
+
+4.根据文件MD5码生成版本号(格式?v=xxxxxx)
+
+    gulp rev
+
+5.上传到服务器，并打开目标地址
+
+    gulp upload
+
+6.重置目录结构
 
     gulp reset
-
-4.恢复上一次开发的src目录，该目录保存在backup目录下
-
-    gulp goBack
